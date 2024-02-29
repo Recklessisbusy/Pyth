@@ -1,6 +1,11 @@
-kelime = str(input("Kelime Girin:"))
-sayac=0
-for x in kelime:
-    if x in "aeouüiöı" :
-       sayac += 1
-print("Sesli Harf Sayısı: ",sayac)
+girdi = str(input("Kelime Girin:"))
+deneme = "aeuüoöıi"
+def kontrol(kelime):
+    sayac = 0
+    for harf in kelime.lower:
+        if harf in deneme:
+            sayac+=1
+    return sayac
+
+t = kontrol(girdi)
+print("Sesli Harf Sayısı:",t)

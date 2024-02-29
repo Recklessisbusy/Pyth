@@ -1,6 +1,5 @@
 input = str(input("Kelime giriniz: "))
 harf = "aeouiıüö"
-
 def seslikontrol(kelime):
     sayac = 0
     for karakter in kelime.lower():
